@@ -1,0 +1,60 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+.container {
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hex-colors{
+    text-align: center;
+}
+.hex-colors h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: mudaCor 5s infinite alternate;
+}
+
+.hex-colors h2{
+    font-size: 2rem;
+    margin-top: 15%;
+}
+
+@keyframes mudaCor{
+    0%{
+        color: white;
+    }
+    20%{
+        color: black;
+    }
+    40%{
+        color:white;
+    }
+    60%{
+        color: black;
+    }
+    80%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .hex-colors h1{
+        font-size: 1.5rem;
+    }
+
+    .hex-colors h2{
+        font-size: 1.5rem;
+    }
+}
+   
